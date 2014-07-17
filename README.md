@@ -6,7 +6,14 @@ See SLIME documentation at: https://github.com/slime/slime, AC-SLIME documentati
 
 ### Installation and Usage:
 
-Clone this repo under `~/.live-packs/`, and add the following line to your `~/.emacs-live.el` file:
+Clone this repo under `~/.live-packs/` recursively:
+
+```sh
+$ cd ~/.live-packs
+$ git clone --recursive https://github.com/thephoeron/slime-pack.git
+```
+
+Then add the following line to your `~/.emacs-live.el` file:
 
 ```lisp
 (live-append-packs '(~/.live-packs/slime-pack))
