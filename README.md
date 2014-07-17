@@ -1,10 +1,20 @@
 ## SLIME Pack for Emacs Live
 
-This is just a wrapper around SLIME and AC-SLIME for Emacs Live.
+This is just a wrapper around SLIME and AC-SLIME for Emacs Live.  It also includes Multi-Term and Neo-Tree, for convenience.
 
-See SLIME documentation at: https://github.com/slime/slime, AC-SLIME documentation at https://github.com/purcell/ac-slime, and Emacs Live documentation at: http://overtone.github.io/emacs-live/documentation.html
+### Documentation
 
-### Installation and Usage:
+SLIME: https://github.com/slime/slime
+
+AC-SLIME: https://github.com/purcell/ac-slime
+
+MultiTerm: http://www.emacswiki.org/emacs/MultiTerm
+
+NeoTree: https://github.com/jaypei/emacs-neotree
+
+Emacs Live: http://overtone.github.io/emacs-live/documentation.html
+
+### Installation and Usage
 
 Clone this repo under `~/.live-packs/` recursively:
 
