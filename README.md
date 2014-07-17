@@ -1,32 +1,19 @@
 ## SLIME Pack for Emacs Live
 
-This is a template for your own user (or other purpose) pack.
+This is just a wrapper around SLIME for Emacs Live.
 
-### init.el
+See SLIME documentation at: https://github.com/slime/slime and Emacs Live documentation at: http://overtone.github.io/emacs-live/documentation.html
 
-Use the file `init.el` for your own configuration elisp. If this starts
-getting unwieldy then you might want to break out the config into
-separate files which you can store in the config directory.
+### Installation and Usage:
 
-### config
+Clone this repo under `~/.live-packs/`, and add the following line to your `~/.emacs-live.el` file:
 
-Files placed in the `config` dir may then be referenced and pulled into
-your `init.el` via the fn `live-load-config-file`. For example, if you
-have the file config/foo.el then you may load it in with:
+```lisp
+(live-append-packs '(~/.live-packs/slime-pack))
+```
 
-    (live-load-config-file "foo.el")
+The default inferior-lisp-program is set to SBCL.
 
-### lib
+Restart Emacs, and you should be able to `M-x slime` once you get to the sweet ascii-art animation, and hack away in Common Lisp with all the extra goodies that come with Emacs Live.
 
- If you want to pull in external libraries into your pack, then you
- should place the libraries within the lib dir. To add a directory
- within the pack's lib directory to the Emacs load path (so that it's
- contents are available to require) you can use the fn
- `live-add-pack-lib`. For example, if you have the external library bar
- stored in lib which contains the file `baz.el` which you wish to
- require, this may be achieved by:
-
-    (live-add-pack-lib "bar")
-    (require 'baz)
-
- Have fun!
+Happy Hacking!
