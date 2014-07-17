@@ -1,3 +1,6 @@
 [submodule "lib/slime"]
 	path = lib/slime
 	url = https://github.com/slime/slime.git
+[submodule "lib/ac-slime"]
+	path = lib/ac-slime
+	url = https://github.com/purcell/ac-slime.git

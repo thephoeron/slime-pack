@@ -1,8 +1,8 @@
 ## SLIME Pack for Emacs Live
 
-This is just a wrapper around SLIME for Emacs Live.
+This is just a wrapper around SLIME and AC-SLIME for Emacs Live.
 
-See SLIME documentation at: https://github.com/slime/slime and Emacs Live documentation at: http://overtone.github.io/emacs-live/documentation.html
+See SLIME documentation at: https://github.com/slime/slime, AC-SLIME documentation at https://github.com/purcell/ac-slime, and Emacs Live documentation at: http://overtone.github.io/emacs-live/documentation.html
 
 ### Installation and Usage:
 
