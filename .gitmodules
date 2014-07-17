@@ -4,3 +4,6 @@
 [submodule "lib/ac-slime"]
 	path = lib/ac-slime
 	url = https://github.com/purcell/ac-slime.git
+[submodule "lib/emacs-neotree"]
+	path = lib/emacs-neotree
+	url = https://github.com/jaypei/emacs-neotree.git
