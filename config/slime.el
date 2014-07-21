@@ -3,6 +3,8 @@
 (live-add-pack-lib "slime")
 (require 'slime-autoloads)
 (setq slime-contribs '(slime-fancy))
+(add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
+(add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
 
 (live-add-pack-lib "ac-slime")
 (require 'ac-slime)
@@ -18,15 +20,28 @@
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
 
-;(live-add-pack-lib "mmm-mode")
-;(require 'mmm-mode)
+(live-add-pack-lib "mmm-mode")
+(require 'mmm-auto)
 
-;(mmm-add-classes
-;  '((markdown-lisp
-;     :submode lisp-mode
-;     :face mmm-declaration-submode-face
-;     :front "^```lisp[\n\r]+"
-;     :back "^```$")))
-;
-;(setq mmm-global-mode 't)
-;(mmm-add-mode-ext-class 'markdown-mode nil 'markdown-lisp)
+(mmm-add-classes
+  '((markdown-lisp
+     :submode lisp-mode
+     :face mmm-code-submode-face
+     :front "^```lisp[\n\r]+"
+     :back "^```$")
+    (markdown-elisp
+     :submode emacs-lisp-mode
+     :face mmm-code-submode-face
+     :front "^```elisp[\n\r]+"
+     :back "^```$")
+    (markdown-shell
+     :submode sh-mode
+     :face mmm-code-submode-face
+     :front "^```sh[\n\r]+"
+     :back "^```$")
+    ))
+
+(setq mmm-global-mode 'maybe)
+(mmm-add-mode-ext-class 'markdown-mode "\\.md\\'" 'markdown-lisp)
+(mmm-add-mode-ext-class 'markdown-mode "\\.md\\'" 'markdown-elisp)
+(mmm-add-mode-ext-class 'markdown-mode "\\.md\\'" 'markdown-shell)
