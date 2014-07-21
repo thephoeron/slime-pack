@@ -1,6 +1,6 @@
 ## SLIME Pack for Emacs Live
 
-This is just a wrapper around SLIME and AC-SLIME for Emacs Live.  It also includes Multi-Term and Neo-Tree, for convenience.
+This is just a wrapper around SLIME and AC-SLIME for Emacs Live.  It also includes Multi-Term, Neo-Tree, and MMM-Mode, for convenience.
 
 ### Documentation
 
@@ -11,6 +11,9 @@ AC-SLIME: https://github.com/purcell/ac-slime
 MultiTerm: http://www.emacswiki.org/emacs/MultiTerm
 
 NeoTree: https://github.com/jaypei/emacs-neotree
+
+MMM-Mode: https://github.com/purcell/mmm-mode
+(and for explanation of how the Lisp sub-mode is implemented for Markdown, see [this blog article](http://vxlabs.com/2014/04/08/syntax-highlighting-markdown-fenced-code-blocks-in-emacs/)
 
 Emacs Live: http://overtone.github.io/emacs-live/documentation.html
 

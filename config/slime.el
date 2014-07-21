@@ -15,6 +15,18 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
-;(live-add-pack-lib "multiterm")
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
+
+(live-add-pack-lib "mmm-mode")
+(require 'mmm-mode)
+
+(mmm-add-classes
+  '((markdown-lisp
+     :submode lisp-mode
+     :face mmm-declaration-submode-face
+     :front "^```lisp[\n\r]+"
+     :back "^```$")))
+
+(setq mmm-global-mode 't)
+(mmm-add-mode-ext-class 'markdown-mode nil 'markdown-lisp)

@@ -7,3 +7,6 @@
 [submodule "lib/emacs-neotree"]
 	path = lib/emacs-neotree
 	url = https://github.com/jaypei/emacs-neotree.git
+[submodule "lib/mmm-mode"]
+	path = lib/mmm-mode
+	url = https://github.com/purcell/mmm-mode.git
